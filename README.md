@@ -25,7 +25,7 @@
         3: ddmlib error
            adb reverse --list
            adb reverse tcp:8081 tcp:8081
-        4: package server
+        4: packager server
            $ react-native start
                Running packager on port 8081
 
