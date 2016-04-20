@@ -1,0 +1,34 @@
+1: nvm install 5.0
+2: nvm use 5.0
+
+3:  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/linuxbrew/go/install)"
+    brew install watchman
+    sudo apt-get install build-essential
+    sudo yum groupinstall 'Development Tools'
+    brew doctor
+    sudo gedit ~/.bashrc #add brew in $PATH
+    source  ~/.bashrc
+    brew install watchman
+    brew install flow
+    sudo apt-get install node-gyp
+4: npm install -g react-native-cli
+react-native init bpro
+react-native run-android --stacktrace (adb install -r xx.apk && react-native start) 
+
+    if error: 
+      adb reverse tcp:8081 tcp:8081
+      edit androdi/build.gradle to 1.2.3 (http://csbun.github.io/blog/2015/12/starting-react-native-with-android/)
+
+      ~~~linux setup
+      1: nodejs > 4.5 Current:5.0
+      2: watchman
+      3: flow
+      4: android device connect to machine
+      5: adb devices no error
+      6: JDK7
+      7: android SDK available(https://developer.android.com/sdk/installing/index.html)
+      8: Configure your SDK 
+          Android SDK Build-tools version 23.0.1
+          Android 6.0 (API 23)
+          Local Maven repository for Support Libraries (this is called Android Support Repository in older versions)
+      9: Genymotion fast android emulator (Alternative Google andorid emilator)
